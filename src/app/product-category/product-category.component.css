@@ -10,30 +10,32 @@
     width: 20vw; /* Set the width of the sidebar */
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: -1; /* Stay on top */
-    top: 10%; /* Stay at the top */
+    top: 5%; /* Stay at the top */
     left: 0;
-    background-color: #3088bdf0; /* Black */
+    background-color: #0ca8c185; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
+    padding: 50px 10px 5px 15px;
 }
 
 /* The navigation menu links */
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #eeeeee;
+    font-size: 22px;
+    color: #000;
     display: block;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-    color: #f1f1f1;
+    color: #363333;
 }
 
 /* Style page content */
 .main {
     margin-left: 20vw; /* Same as the width of the sidebar */
     padding: 0px 10px;
+    
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -89,73 +91,11 @@
     cursor: pointer;
     width: 100%;
 }
-
-.button:hover {
-    background-color: #555;
+/* checkbox */
+.ui-grid .ui-grid-col-1, .ui-grid .ui-grid-col-11 {
+    padding: 4px 10px;
 }
-
-/* css for checkbox */
-.checkbox-container {
+.ui-grid label {
     display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.checkbox-container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.checkbox-container:hover input ~ .checkmark {
-    background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.checkbox-container input:checked ~ .checkmark {
-    background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.checkbox-container input:checked ~ .checkmark:after {
-    display: block;
-}
-
-/* Style the checkmark/indicator */
-.checkbox-container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    margin: 2px 0 0 4px;
 }

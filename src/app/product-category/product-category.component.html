@@ -3,24 +3,17 @@
 
     <div class="sidenav">
         <a href="#">Price</a>
-        <label class="container">One
-          <input type="checkbox" checked="checked">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">Two
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">Three
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
-        <label class="container">Four
-          <input type="checkbox">
-          <span class="checkmark"></span>
-        </label>
+        <div class="ui-g" style="width:250px;margin-bottom:10px">
+          <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
+        
+          <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
+            <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
+
+          </div>
+        Selected Cities: <span *ngFor="let city of selectedCities" style="margin-right:10px">{{city}}</span>
         <a href="#">Availability</a>
         
+
         <a href="#">Brand</a>
     </div>
       
@@ -29,9 +22,9 @@
           <div class="row">
               <div class="column">
                 <div class="card">
-                  <img src="img1.jpg" alt="Jane" style="width:100%">
+                  <img src="assets/img/team1.jpg" alt="Jane" style="width:100%">
                   <div class="card-container">
-                    <h2>Jane Doe</h2>
+                    <h2>Casual T-shirt</h2>
                     <p class="title">CEO &amp; Founder</p>
                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                     <p>example@example.com</p>
@@ -42,9 +35,9 @@
             
               <div class="column">
                 <div class="card">
-                  <img src="img2.jpg" alt="Mike" style="width:100%">
+                  <img src="assets/img/team2.jpg" alt="Mike" style="width:100%">
                   <div class="card-container">
-                    <h2>Mike Ross</h2>
+                    <h2>T-Shirt</h2>
                     <p class="title">Art Director</p>
                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                     <p>example@example.com</p>
@@ -55,9 +48,9 @@
             
               <div class="column">
                 <div class="card">
-                  <img src="img3.jpg" alt="John" style="width:100%">
+                  <img src="assets/img/team3.jpg" alt="John" style="width:100%">
                   <div class="card-container">
-                    <h2>John Doe</h2>
+                    <h2>Formal Shirt</h2>
                     <p class="title">Designer</p>
                     <p>Some text that describes me lorem ipsum ipsum lorem.</p>
                     <p>example@example.com</p>
