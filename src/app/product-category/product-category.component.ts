@@ -14,7 +14,6 @@ export class ProductCategoryComponent implements OnInit {
   constructor(public fetchDataService: FetchdataService) { }
 
   ngOnInit() {
-    
     //console.log(this.fetchDataService.getConfig());
     //this.fetchDataService.getData().subscribe(a=> this.myarr = a);
     //console.log("Data"+ this.a);

@@ -4,12 +4,14 @@ import { Route } from '@angular/compiler/src/core';
 import { HomeComponent } from './home/home.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductCategoryComponent } from './product-category/product-category.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes =[
   { path: '', redirectTo: '/', pathMatch: 'full' },
   { path:'home', component: HomeComponent },
   { path:'product-category', component: ProductCategoryComponent },
-  { path:'product-detail', component:  ProductDetailComponent }
+  { path:'product-detail', component:  ProductDetailComponent },
+  { path:'cart', component:  CartComponent }
 ];
   
 @NgModule({

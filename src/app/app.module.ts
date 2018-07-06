@@ -8,7 +8,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCategoryComponent } from './product-category/product-category.component';
 import { FormsModule }   from '@angular/forms';
-import {CheckboxModule} from 'primeng/checkbox';
+import { CheckboxModule } from 'primeng/checkbox';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
@@ -17,13 +18,13 @@ import {CheckboxModule} from 'primeng/checkbox';
     HomeComponent,
     ProductDetailComponent,
     ProductCategoryComponent,
+    CartComponent
     ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    
     CheckboxModule
   ],
   providers: [],

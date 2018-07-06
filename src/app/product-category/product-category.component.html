@@ -1,24 +1,37 @@
-
 <div class="container">
-
     <div class="sidenav">
-        <a href="#">Price</a>
-        <div class="ui-g" style="width:250px;margin-bottom:10px">
-          <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
-        
-          <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
-            <div class="ui-g-12"><p-checkbox name="group1" value="New York" label="New York" [(ngModel)]="selectedCities" inputId="ny"></p-checkbox></div>
-
-          </div>
-        Selected Cities: <span *ngFor="let city of selectedCities" style="margin-right:10px">{{city}}</span>
-        <a href="#">Availability</a>
-        
-
-        <a href="#">Brand</a>
+        <h4>Price</h4>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">500-1500</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">1500-3000</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">3000-Max</label>
+        </div>
+        <h4>Brand</h4>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Adidas</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">Nike</label>
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox" value="">H&M</label>
+        </div>
     </div>
       
       <!-- Page content -->
       <div class="main">
+          <ul class="pagination">
+               <h5>Go to Next Page</h5>
+              <li class="active"><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+            </ul>
           <div class="row">
               <div class="column">
                 <div class="card">
