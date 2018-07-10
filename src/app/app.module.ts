@@ -8,7 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCategoryComponent } from './product-category/product-category.component';
 import { FormsModule }   from '@angular/forms';
-import { CheckboxModule } from 'primeng/checkbox';
+
 import { CartComponent } from './cart/cart.component';
 
 
@@ -25,7 +25,7 @@ import { CartComponent } from './cart/cart.component';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
-    CheckboxModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
