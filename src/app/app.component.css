@@ -13,3 +13,7 @@
 .card-container {
     padding: 2px 16px;
 }
+.navbar-inverse{
+ position: fixed;
+ width: 100%;
+}

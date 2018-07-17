@@ -99,3 +99,9 @@
     display: block;
     margin: 2px 0 0 4px;
 }
+
+/* product display css */
+
+.p-name{
+    text-overflow: ellipsis !important;
+}
