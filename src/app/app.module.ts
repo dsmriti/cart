@@ -8,9 +8,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ProductCategoryComponent } from './product-category/product-category.component';
 import { FormsModule }   from '@angular/forms';
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 import { CartComponent } from './cart/cart.component';
-
 
 @NgModule({
   declarations: [
@@ -25,8 +27,12 @@ import { CartComponent } from './cart/cart.component';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+<<<<<<< Updated upstream
     
   ],
+=======
+   ],
+>>>>>>> Stashed changes
   providers: [],
   bootstrap: [AppComponent]
 })
