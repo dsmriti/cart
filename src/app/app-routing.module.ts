@@ -7,7 +7,7 @@ import { ProductCategoryComponent } from './product-category/product-category.co
 import { CartComponent } from './cart/cart.component';
 
 const routes: Routes =[
-  { path: '', redirectTo: '/', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path:'home', component: HomeComponent },
   { path:'product-category', component: ProductCategoryComponent },
   { path:'product-detail', component:  ProductDetailComponent },

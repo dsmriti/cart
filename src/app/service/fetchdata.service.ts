@@ -3,7 +3,6 @@ import { Observable, of } from 'rxjs';
 import { Product } from '../interface/product';
 import { PRODUCTS } from '../data/mock-product';
 
-
 @Injectable({
   providedIn: 'root'
 })

@@ -32,42 +32,17 @@
               <li><a href="#">4</a></li>
               <li><a href="#">5</a></li>
             </ul>
-          <div class="row">
-              <div class="column">
+          
+            <div class="row">
+              <div class="column" *ngFor="let x of myarr">
                 <div class="card">
-                  <img src="assets/img/team1.jpg" alt="Jane" style="width:100%">
                   <div class="card-container">
-                    <h2>Casual T-shirt</h2>
-                    <p class="title">CEO &amp; Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Buy</button></p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="assets/img/team2.jpg" alt="Mike" style="width:100%">
-                  <div class="card-container">
-                    <h2>T-Shirt</h2>
-                    <p class="title">Art Director</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Buy</button></p>
-                  </div>
-                </div>
-              </div>
-            
-              <div class="column">
-                <div class="card">
-                  <img src="assets/img/team3.jpg" alt="John" style="width:100%">
-                  <div class="card-container">
-                    <h2>Formal Shirt</h2>
-                    <p class="title">Designer</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>example@example.com</p>
-                    <p><button class="button">Buy</button></p>
+                    <img src="{{x.product_image_url}}"/>
+                    <h3>{{x.product_name}}</h3>
+                    <p>Category: {{x.category}}</p>
+                    <p class="title">{{x.product_price}}</p>
+                    <p>{{x.product_detail}}</p>
+                    <p><button class="button" routerLink="/product-detail">Buy</button></p>
                   </div>
                 </div>
               </div>
