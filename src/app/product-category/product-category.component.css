@@ -103,5 +103,7 @@
 /* product display css */
 
 .p-name{
-    text-overflow: ellipsis !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
