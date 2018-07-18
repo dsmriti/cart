@@ -23,17 +23,8 @@
     </div>
       
       <!-- Page content -->
-      <div class="main">
-          <ul class="pagination">
-               <h5>Go to Next Page</h5>
-              <li class="active"><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-            </ul>
-          
-            <div class="row">
+      <div class="main fix-view">
+          <div class="row">
               <div class="column" *ngFor="let x of myarr">
                 <div class="card">
                   <div class="card-container">
@@ -41,11 +32,19 @@
                     <h4 class="p-name">{{x.product_name}}</h4>
                     <p>Category: {{x.category}}</p>
                     <p class="title">Price: {{x.product_price}}</p>
-                    
                     <p><button class="button" routerLink="/product-detail">Buy</button></p>
                   </div>
                 </div>
               </div>
-            </div>
+              
+          </div>
+          <ul class="pagination">
+            <h5>Go to Next Page</h5>
+           <li class="active"><a href="#">1</a></li>
+           <li><a href="#">2</a></li>
+           <li><a href="#">3</a></li>
+           <li><a href="#">4</a></li>
+           <li><a href="#">5</a></li>
+         </ul>
       </div>
 </div>
