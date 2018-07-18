@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from '../interface/product';
-import { FetchdataService } from '../service/fetchdata.service';
+import { Product } from '../../interface/product';
+import { FetchdataService } from '../../service/fetchdata.service';
 
 @Component({
   selector: 'app-product-category',
