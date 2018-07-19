@@ -12,13 +12,13 @@ const express = require('express'),
       () => {console.log('Database is connected') },
       err => { console.log('Can not connect to the database'+ err)}
     );
-    //const adUnitRoutes = require('./routes/adunit.route');
+    const prodRoutes = require('./routes/product.route');
 
     app.use(bodyParser.json());
     app.use(cors());
     const port = process.env.PORT || 4000;
 
-    app.use('/products');
+    app.use('/items',prodRoutes);
 
     const server = app.listen(port, function(){
      console.log('Listening on port ' + port);

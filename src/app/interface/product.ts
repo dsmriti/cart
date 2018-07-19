@@ -1,5 +1,5 @@
-export class Product{
-    id:any;
+export interface Product{
+    id?:any;
     product_name: string;
     product_image_url: any;
     product_price:number;
