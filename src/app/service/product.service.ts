@@ -13,4 +13,8 @@ export class ProductService {
   display(){
     return this.http.get(`${this.uri}`);
   }
+
+  editAdUnit(id) {
+    return this.http.get(`${this.uri}/edit/${id}`);
+  }
 }

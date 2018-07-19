@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../../interface/product';
 //import { FetchdataService } from '../../service/fetchdata.service';
+
 import { ProductService } from '../../service/product.service';
 
 @Component({
@@ -12,7 +13,8 @@ import { ProductService } from '../../service/product.service';
 export class ProductCategoryComponent implements OnInit {
   selectedCities: string[] = [];
   public items: Product[];
-  constructor(public productService: ProductService) { }
+  item: any = {};
+  constructor(public productService: ProductService,) { }
 
   ngOnInit() {
     //console.log(this.fetchDataService.getConfig());
@@ -26,6 +28,8 @@ export class ProductCategoryComponent implements OnInit {
       this.items = data;
       console.log(this.items);
     });
+
+    
   }
   // fetch(): void {
   //   this.fetchDataService.getData()
