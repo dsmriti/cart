@@ -32,7 +32,7 @@
                     <h4 class="p-name">{{x.product_name}}</h4>
                     <p>Category: {{x.category}}</p>
                     <p class="title">Price: {{x.product_price}}</p>
-                    <p><button class="button" (click)="editAdUnit(id)">Buy</button></p>
+                    <p><a [routerLink]="['/product', x._id]" class="btn btn-primary">Buy</a></p>
                   </div>
                 </div>
               </div>

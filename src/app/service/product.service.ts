@@ -15,6 +15,6 @@ export class ProductService {
   }
 
   editAdUnit(id) {
-    return this.http.get(`${this.uri}/edit/${id}`);
+    return this.http.get(`${this.uri}/product/${id}`);
   }
 }

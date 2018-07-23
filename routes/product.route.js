@@ -19,7 +19,7 @@ prodRoutes.route('/').get(function (req, res) {
   });
 });
 //single product route based on id
-prodRoutes.route('/edit/:id').get(function (req, res) {
+prodRoutes.route('/product/:id').get(function (req, res) {
   let id = req.params.id;
   product.findById(id, function (err, item){
       res.json(item);
