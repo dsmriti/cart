@@ -9,7 +9,7 @@ let product = require('../models/product');
 
 // Defined get data(index or listing) route
 prodRoutes.route('/').get(function (req, res) {
-    product.find(function (err, items){
+    product.find({},function (err, items){
     if(err){
       console.log(err);
     }

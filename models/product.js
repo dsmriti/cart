@@ -7,7 +7,10 @@ let item = new Schema({
   product_image_url: {type: String},
   product_price: {type: Number},
   product_detail: {type: String},
-  category: {type: String}
+  category: {type: String},
+  brand:{type:String},
+  size:{type:String},
+  discount:{type:String}
 },{
     collection: 'items'
 });
