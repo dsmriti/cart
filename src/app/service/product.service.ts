@@ -15,6 +15,10 @@ export class ProductService {
   }
 
   editAdUnit(id) {
-    return this.http.get(`${this.uri}/product/${id}`);
+    return this.http.get(`${this.uri}/product/${id}?`);
+  }
+
+  getCategory(category){
+    return this.http.get(`${this.uri}/product-category/${category}?`);
   }
 }

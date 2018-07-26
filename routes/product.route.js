@@ -18,7 +18,15 @@ prodRoutes.route('/').get(function (req, res) {
     }
   });
 });
-//single product route based on id
+//selection on basis of category
+prodRoutes.route('/product-category/:category').get(function(req, res){
+   let category = req.params.category;
+   product.find().where({category:'men'})
+   res.json(item);
+  });
+
+
+  //single product route based on id
 prodRoutes.route('/product/:id').get(function (req, res) {
   let id = req.params.id;
   product.findById(id, function (err, item){

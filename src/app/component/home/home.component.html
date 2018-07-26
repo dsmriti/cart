@@ -8,7 +8,7 @@
   <h3 class="p-20">Select Product by Category</h3>
    <div class="col-sm-6">
     <div class="list-group">
-      <a routerLink="/product-category" class="list-group-item">Mens</a>
+      <a [routerLink]="['/product-category', item]" class="list-group-item">Mens</a>
       <a routerLink="/product-category" class="list-group-item">Women</a>
       <a routerLink="/product-category" class="list-group-item">Others</a>
     </div>
