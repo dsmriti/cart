@@ -1,9 +1,11 @@
 For running the project run command from terminal
 > npm start 
-OPen Browser > localhost:4200
+
+Open Browser - localhost:4200
 
 For starting the mongo service:
 > sudo service mongod start
+
 Then run Command for connecting db
 > mongo 
 
